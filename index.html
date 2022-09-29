@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="CountDown.js" defer></script>
+    <style>
+        main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        #CountDown {
+            font-size: 20rem;
+        }
+
+        * {
+            margin: 0;
+            padding: 0
+        }
+
+        .Hidden {
+            opacity: 0.05;
+        }
+
+        button {
+            position: fixed;
+            margin: auto;
+        }
+
+        img {
+            height: 450px;
+            cursor: pointer;
+        }
+
+        img:hover {
+            height: 550px;
+        }
+    </style>
+    <title>The Final Exam CountDown</title>
+</head>
+<body>
+    <main>
+        <h1 id="CountDown" class="Hidden"></h1>
+        <button>
+            <img src="riveros_2.png" alt="play">
+        </button>
+    </main>
+    <audio src="song.mp3" loop></audio>
+</body>
+</html>
