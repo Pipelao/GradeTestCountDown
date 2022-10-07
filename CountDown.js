@@ -1,4 +1,4 @@
-const FinalTime = Date.UTC(2022, 8, 30, 16, 0, 0)/1000
+const FinalTime = Date.UTC(2022, 09, 21, 19, 0, 0)/1000
 
 const Now = Math.trunc(Date.now()/1000)
 

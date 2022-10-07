@@ -13,10 +13,9 @@
             flex-direction: column;
             width: 100vw;
             height: 100vh;
-            background-image: url('Nobbak.png');
-            background-repeat: no-repeat;
+            background-image: url('pipelao.jpg');
             background-attachment: fixed;
-            background-size: cover;
+            background-size: 100vh 100%;
         }
 
         #CountDown {
@@ -40,24 +39,32 @@
         button {
             position: fixed;
             margin: auto;
+            border-width: 0;
+            background-color:rgba(0, 0, 0, 0);
         }
 
         img {
-            height: 350px;
+            height: 450px;
             cursor: pointer;
+            filter: invert(65%) sepia(44%) saturate(6821%) hue-rotate(116deg) brightness(101%) contrast(96%);
         }
 
         img:hover {
-            height: 450px;
+            height: 550px;
         }
 
         @media (max-width: 768px) {
+            main {
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+            }
+
             img {
-                height: 100px;
+                height: 140px;
             }
 
             img:hover {
-                height: 150px;
+                height: 160px;
             }
 
             #CountDown {
@@ -71,7 +78,7 @@
     <main>
         <h1 id="CountDown" class="Hidden"></h1>
         <button>
-            <img src="riveros_2.png" alt="play">
+            <img src="play2.png" alt="play">
         </button>
     </main>
     <audio src="song.mp3" loop></audio>
